@@ -1,0 +1,12 @@
+{
+	"name": "Hit",
+	"data": {
+		"type": "scan",
+		"areaType": "line",
+		"scanType": "single",
+		"scanDistance": "4",
+		"oneTimeUse": false,
+		"options": [ "1:isOBJ", "1:isNPC" ]
+	},
+	"interaction": [ "hit" ]
+}

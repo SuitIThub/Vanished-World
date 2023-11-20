@@ -1,0 +1,13 @@
+{
+	"name": "Pick Up",
+	"data": {
+		"type": "scan",
+		"areaType": "cone",
+		"scanType": "multiple",
+		"degree": "45",
+		"scanDistance": "3",
+		"oneTimeUse": false,
+		"options": [ "1:isITEM" ]
+	},
+	"interaction": [ "pick_up" ]
+}

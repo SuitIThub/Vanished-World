@@ -1,0 +1,171 @@
+{
+  "materials": {
+    "wood": {
+      "base": 1,
+      "efficiency": {
+        "wood": 40,
+        "stone": 5,
+        "copper": 15,
+        "brass": 15,
+        "iron": 10,
+        "steel": 5,
+        "manasteel": 0,
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "stone": {
+      "base": 2,
+      "efficiency": {
+        "wood": 70,
+        "stone": 40,
+        "copper": 60,
+        "brass": 60,
+        "iron": 60,
+        "steel": 20,
+        "manasteel": 0,
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "copper": {
+      "base": 3,
+      "efficiency": {
+        "wood": 80,
+        "stone": 60,
+        "copper": 60,
+        "brass": 60,
+        "iron": 60,
+        "steel": 30,
+        "manasteel": "0,5",
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "brass": {
+      "base": 4,
+      "efficiency": {
+        "wood": 80,
+        "stone": 60,
+        "copper": 60,
+        "brass": 60,
+        "iron": 60,
+        "steel": 30,
+        "manasteel": "0,5",
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "iron": {
+      "base": 5,
+      "efficiency": {
+        "wood": 85,
+        "stone": 65,
+        "copper": 60,
+        "brass": 60,
+        "iron": 60,
+        "steel": 40,
+        "manasteel": 1,
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "steel": {
+      "base": 10,
+      "efficiency": {
+        "wood": 100,
+        "stone": 100,
+        "copper": 80,
+        "brass": 80,
+        "iron": 80,
+        "steel": 40,
+        "manasteel": 5,
+        "orichalcum": 1,
+        "infinidium": 0
+      }
+    },
+    "manasteel": {
+      "base": 50,
+      "efficiency": {
+        "wood": 100,
+        "stone": 100,
+        "copper": 100,
+        "brass": 100,
+        "iron": 95,
+        "steel": 90,
+        "manasteel": 40,
+        "orichalcum": 10,
+        "infinidium": 0
+      }
+    },
+    "orichalcum": {
+      "base": 100,
+      "efficiency": {
+        "wood": 100,
+        "stone": 100,
+        "copper": 100,
+        "brass": 100,
+        "iron": 100,
+        "steel": 100,
+        "manasteel": 70,
+        "orichalcum": 40,
+        "infinidium": 0
+      }
+    },
+    "infinidium": {
+      "base": 1000,
+      "efficiency": {
+        "wood": 100,
+        "stone": 100,
+        "copper": 100,
+        "brass": 100,
+        "iron": 100,
+        "steel": 100,
+        "manasteel": 100,
+        "orichalcum": 100,
+        "infinidium": 100
+      }
+    }
+  }
+  "toolHeads": {
+    "axe": {
+      "efficiency": {
+        "wood": 90,
+        "stone": 60,
+        "copper": 30,
+        "brass": 30,
+        "iron": 20,
+        "steel": 10,
+        "manasteel": 0,
+        "orichalcum": 0,
+        "infinidium": 0
+      }
+    },
+    "pickaxe": {
+      "efficiency": {
+        "wood": 50,
+        "stone": 90,
+        "copper": 60,
+        "brass": 60,
+        "iron": 60,
+        "steel": 50,
+        "manasteel": 40,
+        "orichalcum": 40,
+        "infinidium": 0
+      }
+    },
+    "hammer": {
+      "efficiency": {
+        "wood": 30,
+        "stone": 70,
+        "copper": 80,
+        "brass": 80,
+        "iron": 80,
+        "steel": 70,
+        "manasteel": 60,
+        "orichalcum": 60,
+        "infinidium": 0
+      }
+    }
+  }
+}

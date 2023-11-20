@@ -1,0 +1,16 @@
+{
+	"name": "Combine",
+	"data": {
+		"type": "scan",
+		"areaType": "point",
+		"scanType": "multiple",
+		"scanDistance": "4",
+		"radius": "1",
+		"oneTimeUse": true,
+		"options": {
+			"mode": "decidingTrue",
+			"keys": [ "notNPC" ]
+		}
+	},
+	"interaction": [ "craft" ]
+}

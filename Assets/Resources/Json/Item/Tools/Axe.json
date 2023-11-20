@@ -1,0 +1,24 @@
+{
+	"name": "Axe",
+	"type": "tool",
+	"objectType": "ITEM",
+	"interaction": {
+		"type": "tool"
+	},
+	"information": {
+		"type": "tool",
+		"description": [
+			"It's an Axe! So what?!\n",
+			"Head-Type: [+head.material]-[+head.type]"
+		],
+		"head": {
+			"material": "iron",
+			"type": "axe"
+		},
+		"data": {
+			"HP": 10,
+			"MaxHP": 10
+		}
+	},
+	"icon": "Sprites/crudeaxe"
+}

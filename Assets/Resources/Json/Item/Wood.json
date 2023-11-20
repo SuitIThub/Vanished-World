@@ -1,0 +1,63 @@
+{
+	"name": "Wood",
+	"displayName": "{+material} Log",
+	"displayNamePlural": "{+material} Logs",
+	"type": "material",
+	"objectType": "ITEM",
+	"interface": ["Item"],
+	"data": {
+		"replaceData": {
+			"length": 200,
+			"width": 20,
+			"material": "oak",
+			"hardness": 10,
+			"HP": 20,
+			"MaxHP": 20,
+		},
+		"interfaceProtected": ["length"]
+	},
+	"modules": [
+		{
+			"module": "interaction",
+			"type": "item",
+			"interactions": ["hit"]
+		},
+		{
+			"module": "information",
+			"type": "core",
+			"description": [
+				"Got ya some good ol' wood head, aye?\n",
+				"HP: [property.HP]/[property.MaxHP]",
+				"Amount: [property.amount]/[property.maxAmount]"
+				"Width: {width}cm",
+				"Length: {length}cm",
+				"Material: {+material}"
+			],
+			"data": {
+				"property": {
+					"amount": 1,
+					"maxAmount": 1,
+					"HP": "{HP}",
+					"MaxHP": "{MaxHP}"
+				},
+				"materialProperty": {
+					"width": "{width}",
+					"length": "{length}",
+					"material": "{material}",
+					"materialType": "wood",
+					"hardness": "{hardness}",
+					"scale": "{scaleX}:{scaleX}"
+				},
+			},
+			"recipe": [
+				"Json/Recipe/Interactions/wood_planks"
+			],
+			"comparables": [
+				"{material}",
+				["APPEND", "{width}", 6, "0"],
+				["APPEND", "{length}", 6, "0"],
+			]
+		}
+	],
+	"icon": [ "Sprites/resources_basic", "log_{material}" ]
+}

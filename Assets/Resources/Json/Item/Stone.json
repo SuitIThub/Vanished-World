@@ -1,0 +1,32 @@
+{
+	"name": "Stone",
+	"displayName": "[amount] Stone[amountS]",
+	"type": "material",
+	"objectType": "ITEM",
+	"values": {
+		"size": ["RANDOM_FLOAT", "0,1", "0,5"]
+	},
+	"elementProperty": {
+		"water": 9,
+		"life": 5
+	},
+	"materialProperty": {
+		"size": "{size}",
+		"blunt": 1,
+		"hard": 1
+	},
+	"interaction": {
+		"type": "default"
+	},
+	"information": {
+		"type": "default",
+		"description": "I'm rock hard baby!",
+		"data": {
+			"stackable": true,
+			"maxAmount": 10,
+			"amount": 1,
+			"amountS": [ "EQUALS", "[amount]", "1", "", "s" ]
+		}
+	},
+	"icon": "Sprites/stone"
+}

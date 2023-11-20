@@ -1,0 +1,5 @@
+{
+	"interface": "Item",
+	"length": 100,
+	"scaleX" : ["LARGER_THAN", ["DIVIDE", "{length}", 100], 5, 5, ["DIVIDE", "{length}", 100]]
+}

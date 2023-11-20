@@ -1,0 +1,43 @@
+{
+	"name": "Wood Plank",
+	"displayName": "[amountN] {+material} Plank[amountS]",
+	"type": "material",
+	"objectType": "ITEM",
+	"values": {
+		"inherit": {
+			"size": "100",
+			"width": "20",
+			"depth": "2",
+			"material": "oak"
+		}
+	},
+	"materialProperty": {
+		"size": "{size}",
+		"width": "{width}",
+		"depth": "{thickness}",
+		"material": "{material}"
+	},
+	"interaction": {
+		"type": "default"
+	},
+	"information": {
+		"type": "default",
+		"description": [
+			"Ready for some planking?",
+			"Length: {size}cm",
+			"Width: {width}cm",
+			"Depth: {depth}cm",
+			"Material: {+material}"
+		],
+		"data": {
+			"stackable": true,
+			"maxAmount": 2,
+			"amount": 1,
+			"amountN": [ "EQUALS", "amount", "1", "", "[amount]" ],
+			"amountS": [ "EQUALS", "[amount]", "1", "", "s" ],
+			"HP": 20,
+			"MaxHP": 20
+		}
+	},
+	"icon": [ "Sprites/resources_basic", "plank_{material}" ]
+}

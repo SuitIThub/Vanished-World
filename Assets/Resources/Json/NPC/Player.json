@@ -1,0 +1,82 @@
+{
+	"name": "Player",
+	"type": "player",
+	"objectType": "NPC",
+	"data" : {
+		"replaceData": {
+			"character" : "Sprites/CharacterTemp",
+			"scale": "1:1",
+			"pos": "1:1",
+			"test": "mega"
+		},
+		"localOnly" : ["character", "scale"],
+		"protected" : ["scale"]
+	},
+	"icon": "{character}",
+	"modules": [
+		{
+			"module":  "interaction",
+			"type": "player",
+			"interactions": [
+				"hit",
+				"craft",
+				"pick_up"
+			]
+		},
+		{
+			"module": "information",
+			"type": "core",
+			"data":{
+				"property": {
+					"HP": 50,
+					"MaxHP": 50
+				},
+			}
+		},
+		{
+			"module": "movement",
+			"type": "player"
+		},
+		{
+			"module": "inventory",
+			"type": "player"
+		}
+	],
+	"gameObject": {
+		"preset": "NPC",
+		"width": "0,75",
+		"offset": "0:-0,5",
+		"components": [
+			{
+				"type": "rigidbody",
+				"bodyType": "Dynamic",
+				"simulated": true,
+				"mass": "1",
+				"gravity": "0",
+				"constraints": [ "z" ]
+			},
+			{
+				"type": "collider",
+				"collider": "circle",
+				"radius": "0,3",
+				"offset": "0:-0,65"
+			}
+		],
+		"children": [
+			{
+				"pos": "0:0",
+				"scale": "5:5",
+				"components": [
+					{
+						"type": "spriteRenderer",
+						"texture": "{character}"
+					},
+					{
+						"type": "sortingOrderUpdater",
+						"sortingOffset": 4
+					}
+				]			
+			}
+		]
+	}
+}

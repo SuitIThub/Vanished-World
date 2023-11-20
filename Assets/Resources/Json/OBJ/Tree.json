@@ -1,0 +1,104 @@
+{
+	"name": "Tree",
+	"displayName": "{+material} Tree",
+	"type": "tree",
+	"objectType": "OBJ",
+	"data": {
+		"replaceData": {
+			"length": ["STANDARTIZE", ["RANDOM_INT", "200", "1000"], 5],
+			"width": ["STANDARTIZE", ["RANDOM_INT", "10", "50"], 5 ],
+			"material": ["RANDOM_LIST", "oak", "teak", "spruce"],
+			"texture": ["RANDOM_LIST",
+				"Sprites/tree/{material}/tree1",
+				"Sprites/tree/{material}/tree2",
+				"Sprites/tree/{material}/tree3",
+				"Sprites/tree/{material}/tree4"
+			],
+			"stickAmount": ["ROUND", ["MULTIPLY", "{length}", "0,05"], 0],
+			"hp": ["MULTIPLY", "{length}", "0,1"],
+			"hardness": ["DIVIDE", "{hp}", 5]
+		},
+		"localOnly": ["texture", "stickAmount", "hp"],
+		"overwriteData": {
+			"length": "{length}",
+			"width": "{width}",
+			"material": "{material}",
+			"hardness": "{hardness}"
+		}
+	},
+	"icon": "{texture}",
+	"modules": [
+		{
+			"module": "interaction",
+			"type": "resource"
+		},
+		{
+			"module": "information",
+			"type": "core",
+			"dataKey": "InfoObj{+material}",
+			"data": {
+				"property": {
+					"HP": "{hp}",
+					"MaxHP": "{hp}",
+				},
+				"options": {
+					"isFunnel": false
+				},
+				"materialProperty": {
+					"length": "{length}",
+					"width": "{width}",
+					"material": "{material}",
+					"materialType": "wood",
+					"hardness": "{hardness}"
+				}
+			},
+			"comparables": [
+				"{materialType}",
+				"{material}",
+				["APPEND", "{length}", 6, "0"],
+				["APPEND", "{width}", 6, "0"]
+			]
+		},
+		{
+			"module": "inventory",
+			"type": "droppable",
+			"drop": [
+				"Wood",
+				[ "{stickAmount}", "Stick" ]
+			]
+		}
+	],
+	"gameObject": {
+		"preset": "OBJ",
+		"scale": "1,5:1,5",
+		"width": "0,4",
+		"offset": "0:-1",
+		"children": [
+			{
+				"pos": "0:0",
+				"scale": "1:1",
+				"components": [
+					{
+						"type": "collider",
+						"collider": "circle",
+						"radius": "0,4",
+						"offset": "0:-1"
+					}
+				]
+			},
+			{
+				"pos": "0:0",
+				"scale": "5:5",
+				"components": [
+					{
+						"type": "spriteRenderer",
+						"texture": "{texture}"
+					},
+					{
+						"type": "outline"
+					}
+				]			
+			}
+		]
+	}
+}

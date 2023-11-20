@@ -1,0 +1,77 @@
+{
+	"name": "Crafting Table",
+	"displayName": "Crafting Table",
+	"type": "workshop",
+	"objectType": "OBJ",
+	"data": {
+		"replaceData": {
+			"texture": "Sprites/furniture_sprite_sheet",
+			"sprite": "furniture_table_empty",
+			"size": 100,
+			"width": 200
+		},
+		"localOnly": ["texture", "sprite"]
+	},
+	"icon": [ "{texture}", "{sprite}" ],
+	"modules": [
+		{
+			"module": "interaction",
+			"type": "workshop"
+		},
+		{
+			"module": "information",
+			"type": "core",
+			"dataKey": "Workshop",
+			"data": {
+				"property": {
+					"HP": 10,
+					"MaxHP": 10
+				},
+				"materialProperty": {
+					"size": "{size}",
+					"width": "{width}",
+					"type": "wood"
+				}
+			}
+		},
+		{
+			"module": "inventory",
+			"type": "display",
+			"positions": [
+				"-1:0,5", 
+				"0:0,5", 
+				"1:0,5", 
+				"-0,5:0,5",
+				"0,5:0,5",
+			],
+			"sortingOffset": -30
+		}
+	],
+	"gameObject": {
+		"preset": "OBJ",
+		"scale": "5:5",
+		"width": "1,5",
+		"offset": "0:-0,5",
+		"children": [
+			{
+				"pos": "0:0",
+				"scale": "1:1",
+				"components": [
+					{
+						"type": "collider",
+						"collider": "box",
+						"size": "0,6:0,3",
+						"offset": "0:-0,04"
+					},
+					{
+						"type": "spriteRenderer",
+						"texture": [ "{texture}", "{sprite}" ]
+					},
+					{
+						"type": "outline"
+					}
+				]
+			}
+		]
+	}
+}

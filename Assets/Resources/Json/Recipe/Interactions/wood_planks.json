@@ -1,0 +1,41 @@
+{
+  "name": "Wood Plank",
+  "type": "interactionRecipe",
+  "icon": [ "Sprites/resources_basic", "plank_{material}" ],
+
+  "craftPerMethod": "hit",
+
+  "dataOverwrite": {
+    "depth": "{width}",
+    "amount": [
+      "ROUND_DOWN",
+      [ "DIVIDE", "{width}", "2" ],
+      0
+    ],
+    "width": "2"
+  },
+
+  "neededToolProps": {
+    "head": {
+      "type": "axe"
+    }
+  },
+
+  "product": [
+    "Json/Item/Wood Plank"
+  ],
+
+  "productInheritsData": true,
+  "destroysIngredient": true,
+
+  "requirement": {
+    "preset": "Json/Item/Wood",
+    "data": {
+      "HP": [
+        "BETWEEN",
+        [ "MULTIPLY", "[MaxHP]", "0,1" ],
+        [ "MULTIPLY", "[MaxHP]", "0,5" ]
+      ]
+    }
+  }
+}

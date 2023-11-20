@@ -1,0 +1,33 @@
+{
+	"name": "Bone",
+	"displayName": "[amountN] {+material} Bone[amountS]",
+	"type": "material",
+	"objectType": "ITEM",
+	"values": {
+		"length": ["RANDOM_FLOAT", "0,3", "0,5"],
+		"material": "pig"
+	},
+	"elementProperty": {
+		//todo
+	},
+	"materialProperty": {
+		"size": "{length}",
+		"width": "0,03",
+		"material": "{material}"
+	},
+	"interaction": {
+		"type": "default"
+	},
+	"information": {
+		"type": "default",
+		"description": "Wanna see my bone?",
+		"data": {
+			"stackable": true,
+			"maxAmount": 20,
+			"amount": 1,
+			"amountN": ["EQUALS", "amount", "1", "", "[amount]"],
+			"amountS": [ "EQUALS", "[amount]", "1", "", "s" ]
+		}
+	},
+	"icon": [ "Sprites/resources_basic", "animal_bone" ]
+}

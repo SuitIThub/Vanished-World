@@ -1,0 +1,16 @@
+{
+	"name": "Saw",
+	"type": "tool",
+	"objectType": "ITEM",
+	"interaction": {
+		"type": "tool"
+	},
+	"information": {
+		"type": "tool",
+		"description": "Zzzzzzz!"
+	},
+	"action": {
+		"type": "tool"
+	},
+	"icon": "Sprites/saw"
+}

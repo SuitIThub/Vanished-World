@@ -1,0 +1,57 @@
+{
+  //floats have to be added as a string
+  //integers can be added as an integer or as a string
+  //to insert a value from values tab add the value name in between {}, ex.: {width}
+
+  "name": "example",
+  "type": "material",
+  "objectType": "ITEM",
+
+  "values": {
+    "size": "1",
+    "width": "0,2",
+    "material": "oak",
+    "randomIntExample": [ "RANDOM_INT", 1, 10 ], //picks a random number between 1(inclusive) and 10(inclusive)
+    "randomFloatExample": [ "RANDOM_FLOAT", "1", "10" ], //picks a random number between 1(inclusive) and 10(exclusive)
+    "randomListExample": [ "RANDOM_LIST", "element1", "element2", "etc." ] //picks one element of the listed ones
+  },
+
+  "elementProperty": {
+    "water": 9,
+    "life": 5
+  },
+  "materialProperty": {
+    "size": "{size}", //in m
+    "width": "{width}", //in m
+    "material": "{material}"
+  },
+  "visualProperty": {
+    "color": "black"
+  },
+
+  "interaction": { //*
+    "type": "dummy" //*
+  },
+  "information": { //*
+    "type": "dummy", //*
+    "description": "Got ya some good ol' wood head, aye?", //*
+    "data": { //additional information for the item
+      "stackable": true, //stackable, maxAmount and Amount necessary for making an Item stackable
+      "maxAmount": 10,
+      "amount": 1
+    }
+  },
+  "action": { //currently up for removal
+    "type": "dummy"
+  },
+  "movement": { //mostly not needed for items
+    "type": "dummy"
+  },
+  "inventory": { //mostly not needed for items
+    "type": "dummy"
+  },
+
+  //only add one of these two options
+  "icon": [ "Sprites/resources_basic", "{material}_log" ], //example for sprite in texture comprised of "texture path" and "sprite name"
+  "icon": [ "Sprites/wood_log" ] //example for full texture
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Drop",
+	"data": {
+		"type": "scan",
+		"areaType": "point",
+		"scanType": "single",
+		"radius": 1,
+		"scanDistance": "4",
+		"oneTimeUse": false,
+		"options": [ "1:isStackable", "1:isFunnel"]
+	},
+	"interaction": [ "drop" ],
+	"useOnOrigin": true
+}
