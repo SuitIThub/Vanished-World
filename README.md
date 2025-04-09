@@ -60,3 +60,7 @@ This is an archived version of the project. While the core systems are preserved
 ## Lessons Learned
 
 While developing Vanished World, I deepened my skills in Unity architecture, state machines, and component-based design. I also learned to scope large projects better and iteratively refine systems based on testing.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
