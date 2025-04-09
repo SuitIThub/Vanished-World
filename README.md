@@ -56,3 +56,7 @@ To explore this project:
 ## Note
 
 This is an archived version of the project. While the core systems are preserved, some assets or dependencies might be missing. The project is shared for reference and educational purposes.
+
+## Lessons Learned
+
+While developing Vanished World, I deepened my skills in Unity architecture, state machines, and component-based design. I also learned to scope large projects better and iteratively refine systems based on testing.
