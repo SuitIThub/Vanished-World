@@ -1,5 +1,10 @@
 # Vanished World
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Unity](https://img.shields.io/badge/Unity-2D%20Game-blue.svg)](https://unity.com/)
+[![Status](https://img.shields.io/badge/Status-Archived-red.svg)](https://github.com/SuitIThub/Vanished-World)
+[![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+
 An archived Unity-based 2D pixel RPG simulation project that aimed to create a living, breathing world with advanced NPC interactions and world simulation systems.
 
 ## Project Overview
